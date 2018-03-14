@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "bankai build index.js",
+    "build": "gulp compile && bankai build index.js",
     "create": "choo-scaffold",
     "inspect": "bankai inspect index.js",
     "start": "bankai start index.js",
@@ -17,10 +17,17 @@
     "tachyons": "^4.9.1"
   },
   "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
     "bankai": "^9.9.0",
     "choo-devtools": "^2.5.0",
     "choo-scaffold": "^1.1.2",
+    "del": "^3.0.0",
     "dependency-check": "^3.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-sourcemaps": "^2.6.4",
     "standard": "^11.0.0"
   }
 }
